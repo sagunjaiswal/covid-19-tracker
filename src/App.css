@@ -1,38 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Fondamento:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #88bef5;
+  color: #000000;
+  font-family: "Fondamento", cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 90%;
+  margin: 0 auto;
+  background: #cabbe9;
+  color: #1e6262;
+  border: 4px solid #0e153a;
 }
 
-.App-link {
-  color: #61dafb;
+.heading {
+  font-family: "Monoton", cursive;
+  font-size: 3rem;
+  line-height: 140px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #071a52;
+  /* width: 80%; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.newConfirmed,
+.totalConfirmed,
+.NewDeaths,
+.totalDeaths,
+.totalRecovered {
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 0 13px;
+  border-collapse: separate;
+  width: 80%;
+}
+
+table thead tr {
+  background: palegreen;
+  color: #000;
+}
+
+table thead tr th {
+  padding: 12px;
+}
+
+table tbody tr td {
+  padding: 12px;
+  text-align: left;
 }
